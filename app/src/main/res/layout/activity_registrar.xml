@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/imag"
+    tools:context=".Registrar">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/trans"
+        android:minHeight="?attr/actionBarSize"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+    </androidx.appcompat.widget.Toolbar>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Crear tu Cuenta"
+            android:textAlignment="center"
+            android:textColor="#A10B51"
+            android:textSize="30pt"
+            android:textStyle="bold|italic" />
+        <EditText
+            android:id="@+id/etCorreonuevo"
+            android:layout_width="150pt"
+            android:layout_height="20pt"
+            android:layout_marginTop="10pt"
+            android:hint="mymail@domain.com"
+            android:textAlignment="center"
+            />
+        <EditText
+            android:id="@+id/etClavenuevo"
+            android:layout_width="150pt"
+            android:layout_height="20pt"
+            android:layout_marginVertical="10pt"
+            android:hint="mymail@domain.com"
+            android:textAlignment="center"
+            />
+        <Button
+            android:id="@+id/btnRegistrarnuevo"
+            android:layout_width="120pt"
+            android:layout_height="20pt"
+            android:text="Registrarse"/>
+        <Button
+            android:id="@+id/btnRegresarnuevo"
+            android:layout_width="120pt"
+            android:layout_height="20pt"
+            android:layout_marginTop="5pt"
+            android:text="Regresar"/>
+
+
+
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

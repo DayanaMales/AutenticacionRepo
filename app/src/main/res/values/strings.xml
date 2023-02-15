@@ -1,0 +1,16 @@
+<resources>
+    //Aqui podemos cambiar la etiqueta del actionBar
+    <string name="app_name">Registro</string>
+    <string name="invalid_mail">Ingrese mail valido</string>
+    <string name="invalid_password">Ingrese un password mayor a 6 digitos</string>
+    <string name="facebook_app_id">718481506614150</string>
+    <string name="fb_login_protocol_scheme">fb1234</string>
+    <string name="facebook_client_token">56789</string>
+    <string name="option_1">Ventas</string>
+    <string name="option_2">Compras</string>
+    <string name="option_3">Lista Productos</string>
+    <string name="option_4">Cerrar Seccion</string>
+
+
+
+</resources>

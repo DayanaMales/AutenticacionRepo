@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/imag"
+    tools:context=".Persona">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/trans"
+        android:minHeight="?attr/actionBarSize"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <EditText
+            android:id="@+id/etCedula"
+            android:layout_width="150pt"
+            android:layout_height="68dp"
+            android:hint=" Mi cedula"
+            android:inputType="number"
+            android:textAlignment="center" />
+
+        <EditText
+            android:id="@+id/etNombre"
+            android:layout_width="150pt"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5pt"
+            android:layout_marginBottom="5pt"
+            android:hint=" Mi nombre"
+            android:inputType="text"
+            android:textAlignment="center" />
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="116dp">
+
+            <RadioButton
+
+                android:id="@+id/rbFemenino"
+                android:layout_width="207dp"
+                android:layout_height="wrap_content"
+
+                android:layout_gravity="center"
+                android:layout_marginLeft="10pt"
+                android:gravity="center|left|center_vertical"
+                android:text="Femenino" />
+
+            <RadioButton
+                android:id="@+id/rbMasculino"
+                android:layout_width="88pt"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+
+                android:layout_marginLeft="10pt"
+                android:text="Masculino" />
+        </RadioGroup>
+
+        <Spinner
+            android:id="@+id/spnPais"
+            android:layout_width="150pt"
+            android:layout_height="50dp"
+            android:layout_marginVertical="5pt" />
+
+        <EditText
+            android:id="@+id/etProvincia"
+            android:layout_width="150pt"
+            android:layout_height="wrap_content"
+            android:hint=" Mi província"
+            android:inputType="text"
+            android:textAlignment="center" />
+
+
+        <TextView
+            android:id="@+id/tvCorreo"
+            android:layout_width="150pt"
+            android:layout_height="52dp"
+            android:layout_marginTop="5pt"
+            android:hint="usaermail@domain.com"
+            android:textAlignment="center" />
+
+        <TextView
+            android:id="@+id/tvId"
+            android:layout_width="150pt"
+            android:layout_height="58dp"
+            android:layout_marginTop="5pt"
+            android:hint="id usuario"
+            android:visibility="gone"
+            android:textAlignment="center" />
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="69dp">
+
+            <Button
+                android:id="@+id/btnActualizar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Actualizar" />
+
+            <Button
+                android:id="@+id/btnSalir"
+                android:layout_width="128dp"
+                android:layout_height="wrap_content"
+                android:text="salir" />
+
+            <Button
+                android:id="@+id/btnSiguiente"
+                android:layout_width="133dp"
+                android:layout_height="wrap_content"
+                android:text="siguiente" />
+
+        </TableRow>
+
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

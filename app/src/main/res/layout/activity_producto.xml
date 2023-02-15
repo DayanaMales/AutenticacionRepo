@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/imag"
+    tools:context=".Producto">
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+
+        android:minHeight="?attr/actionBarSize"
+        android:background="@color/trans"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+    </androidx.appcompat.widget.Toolbar>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:background="@color/trans"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="50pt"
+                android:textAlignment="center"
+                android:text="Registro Productos"
+                android:textColor="#8E15A3"
+                android:textSize="20pt"
+                android:textStyle="bold|italic" />
+
+            <EditText
+                android:id="@+id/etcodigoProducto"
+                android:layout_width="150pt"
+                android:layout_height="56dp"
+                android:layout_gravity="center_horizontal"
+                android:hint="Código del Producto"
+                android:textAlignment="center"
+                android:textStyle="italic" />
+
+            <EditText
+                android:id="@+id/etnombreProducto"
+                android:layout_width="150pt"
+                android:layout_height="55dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginVertical="5pt"
+                android:hint="Nombre del Producto"
+                android:textAlignment="center"
+                android:textStyle="italic" />
+
+            <EditText
+                android:id="@+id/etStockProducto"
+                android:layout_width="150pt"
+                android:layout_height="58dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginVertical="5pt"
+                android:hint="Stock del Producto"
+                android:textAlignment="center"
+                android:textStyle="italic" />
+
+            <EditText
+                android:id="@+id/etPrecioCosto"
+                android:layout_width="150pt"
+                android:layout_height="62dp"
+                android:layout_gravity="center_horizontal"
+                android:hint="Precio costo del Producto"
+                android:textAlignment="center"
+                android:textStyle="italic" />
+
+            <EditText
+                android:id="@+id/etPrecioVenta"
+                android:layout_width="150pt"
+                android:layout_height="66dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="5pt"
+                android:hint="Precio venta del Producto"
+                android:textAlignment="center"
+                android:textStyle="italic" />
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <Button
+                    android:id="@+id/btnActualizar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="actualizar" />
+
+                <Button
+                    android:id="@+id/btnGuardar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="guardar" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="76dp">
+
+                <Button
+                    android:id="@+id/btnBuscarVentas"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="buscar" />
+
+                <Button
+                    android:id="@+id/btnRegresar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="regresar" />
+
+                <Button
+                    android:id="@+id/btnBorrar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="borrar" />
+
+            </TableRow>
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>
